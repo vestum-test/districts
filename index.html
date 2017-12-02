@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Districts</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div id="districts-map-container" class="container">
+      <div class="row">
+        <div id="districts-map" class="col-md-8"></div>
+        <div id="districts-map-menu" class="col-md-4">
+          <div id="add-new-district">
+            <button id="init-district-adding-btn" type="button" class="btn btn-primary">Добавить новый район</button>
+            <input id="new-district-name" type="text" placeholder="Имя района" class="districts-map-menu-input">
+            <button id="add-new-district-btn" type="button" class="btn btn-primary">Добавить</button>
+            <button id="cancel-new-district-btn" type="button" class="btn btn-warning">Отмена</button>
+          </div>
+          <button id="log-districts" type="button" class="btn btn-default">Вывести данные о районах в консоль</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/bundle.js"></script>
+  </body>
+</html>
